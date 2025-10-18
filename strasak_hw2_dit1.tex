@@ -1,0 +1,97 @@
+\documentclass[10pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{amsmath} % Pro pokročilejší matematické prostředí
+
+\setlength{\voffset}{-0.65in} % upper border
+\setlength{\hoffset}{-0.65in} % left border
+
+\title{[B3M38DIT1] Assignment}
+\author{David Strašák}
+\date{5.10.2025}
+
+\usepackage[utf8]{inputenc} % Vstupní kódování (pro češtinu)
+\usepackage[czech]{babel}  % Načtení jazykové podpory pro češtinu
+
+\usepackage{csquotes} % Zajišťuje správné uvozovky (požadované babel/polyglossia)
+
+\usepackage[
+backend=biber,
+style=numeric, % Změna stylu
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{strasak_hw2_dit1.bib}
+
+\begin{document}
+	\maketitle
+	
+	\begin{enumerate}
+		\item \textbf{Vypočtěte přibližnou MTTF pro 2 harddisky zapojené v uspořádání RAID 1. Sami si vyberte typ harddisku, jeho parametry vyhledejte na webu, v odpovědi uveďte jejich označení. Uvažujte pouze poruchovost harddisků, fiktivní RAID řadič zatím považujte za 100\% spolehlivý.}
+		
+		Pro tento domácí úkol jsem zvolil SSD disk \textbf{Apacer AS350X}. V datasheetu \cite{ssddisk} je uvedena hodnota \textbf{MTBF = $1\,500\,000$ hodin}.
+		
+		MTBF (Mean Time Between Failures) je součet MTTF (Mean Time To Failure) a MTTR (Mean Time To Repair). Jelikož je soustava v uspořádání RAID 1, budu předpokládat, že doba opravy (MTTR) je zanedbatelná vzhledem k MTTF, protože hodnoty MTTF jsou o několik řádů větší. Lze tedy uvažovat \textbf{MTTF $\approx$ MTBF}.
+		
+		Když zanedbám RAID řadič, je tato soustava jednoduchým paralelním uspořádáním dvou identických SSD disků. Intenzita poruch (Failure Rate) $\lambda$ je převrácená hodnota MTTF ($\lambda = 1/\text{MTTF}$).
+		
+		Celková MTTF pro paralelní uspořádání dvou identických prvků s konstantní intenzitou poruch je:
+		$$
+		\text{MTTF}_{\text{RAID}1} = \frac{1}{\lambda_1} \sum_{i=1}^{2} \frac{1}{i} = \frac{1}{\lambda} \left(\frac{1}{1} + \frac{1}{2}\right) = 1.5 \cdot \text{MTTF}_{1}
+		$$
+		Dosazením hodnoty $\text{MTTF}_1 = 1\,500\,000$ hodin:
+		$$
+		\text{MTTF}_{\text{RAID}1} = 1.5 \cdot 1\,500\,000 = \mathbf{2\,250\,000 \text{ hodin}}
+		$$
+		
+		---
+		
+		\item \textbf{Určete přibližnou MTTF pro uspořádání z bodu 1 s uvažováním spolehlivosti řadiče (RAID controller) Intel RS2MB044.}
+		
+		Pro RAID řadič \textbf{Intel RS2MB044} je v datasheetu \cite{oldControllerDS} uvedena hodnota \textbf{MTBF$_{\text{contr}} = 366\,042$ hodin}. I zde zanedbám dobu na opravu a uvažuji $\text{MTTF}_{\text{contr}} \approx \text{MTBF}_{\text{contr}}$.
+		
+		Tento RAID řadič tvoří se systémem RAID 1 sériové uspořádání, což představuje tzv. \textbf{single point of failure}.
+		
+		Celková MTTF systému pro sériové zapojení bloků je dána součtem převrácených hodnot MTTF jednotlivých bloků:
+		$$
+		\frac{1}{\text{MTTF}_{\text{SYS}}} = \frac{1}{\text{MTTF}_{\text{RAID}1}} + \frac{1}{\text{MTTF}_{\text{contr}}}
+		$$
+		Dosazením hodnot $\text{MTTF}_{\text{RAID}1} = 2\,250\,000$ h a $\text{MTTF}_{\text{contr}} = 366\,042$ h:
+		$$
+		\text{MTTF}_{\text{RAID}1+\text{contr}} = \left(\text{MTTF}_{\text{RAID}1}^{-1} + \text{MTTF}_{\text{contr}}^{-1}\right)^{-1} \approx \mathbf{314\,825 \text{ hodin}}
+		$$
+		
+		---
+		
+		\item \textbf{Pro situaci z bodu 2. použijte jiný RAID řadič (např. Intel RS3GC008) a určete MTTF.}
+		
+		Pro tuto situaci použiji RAID řadič \textbf{Intel RS3WC080}, který má \textbf{MTBF$_{\text{contr}} = 5\,350\,346$ hodin} \cite{dalsiraidcontroler}. Stejně jako v předchozích bodech platí $\text{MTTF} \approx \text{MTBF}$.
+		
+		Výpočet pro MTTF tohoto sériového systému je stejný jako v předchozím bodě:
+		$$
+		\text{MTTF}_{\text{RAID}1+\text{contr}} = \left(\text{MTTF}_{\text{RAID}1}^{-1} + \text{MTTF}_{\text{contr}}^{-1}\right)^{-1}
+		$$
+		Dosazením $\text{MTTF}_{\text{RAID}1} = 2\,250\,000$ h a $\text{MTTF}_{\text{contr}} = 5\,350\,346$ h:
+		$$
+		\text{MTTF}_{\text{RAID}1+\text{contr}} \approx \mathbf{1\,583\,912 \text{ hodin}}
+		$$
+		
+		---
+		
+		\item \textbf{Porovnejte dosažené MTTF a zformulujte závěry Vašeho pozorování.}
+		
+		Na tomto domácím úkolu je dobře vidět, jak \textbf{single point of failure} může ovlivnit spolehlivost celého systému.
+		
+		\begin{itemize}
+			\item Nejdříve bylo vidět \textbf{Zvýšení spolehlivosti RAID 1 (bez řadiče):} RAID 1 uspořádání zvýšilo MTTF z $1\,500\,000$ h (jeden disk) na $2\,250\,000$ h.
+			\item \textbf{Vliv nekvalitního řadiče:} Při použití méně spolehlivého řadiče ($\text{MTTF}_{\text{contr}} = 366\,042$ h) klesla celková MTTF systému na $314\,825$ h, což je \textbf{méně než spolehlivost samotného řadiče} a výrazně méně než spolehlivost jednotlivého SSD disku.
+			\item \textbf{Vliv kvalitního řadiče:} S vysoce spolehlivým řadičem ($\text{MTTF}_{\text{contr}} = 5\,350\,346$ h) dosáhla MTTF systému $1\,583\,912$ h.
+		\end{itemize}
+		
+		Z těchto výpočtů vyplývá obecný závěr pro sériové systémy: Spolehlivost celého systému \textbf{nemůže být nikdy vyšší než spolehlivost nejméně spolehlivého prvku} v sérii. Přidáním jakéhokoli sériového prvku (zde RAID řadiče) spolehlivost systému klesá. Kvalita řadiče hraje důležitou roli v celkové spolehlivosti systému a to i když má řadič ve třetím případě více než 2x vyšší MTTF než systém RAID 1, konečná spolehlivost je stále limitována (a snížena) a blíží se spolehlivosti jednoho disku.
+		
+	\end{enumerate}
+	
+	\printbibliography
+	
+\end{document}
