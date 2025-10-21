@@ -1,0 +1,233 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="ju7uby4-a7bkIo00bC4j">
+    <mxGraphModel dx="2037" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-1" value="Neovladatelný systém" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="439" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZnTfYOugVIomt-gQt8mF-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-2" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;direction=north;numInputs=4;" vertex="1" parent="1">
+          <mxGeometry x="469" y="90" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-3" target="ZnTfYOugVIomt-gQt8mF-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-3" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=or;direction=north;numInputs=3;" vertex="1" parent="1">
+          <mxGeometry x="255" y="340" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-5" value="Selhání lokálního ovládání" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-6" value="Selhání dálkového ovládání" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-10" value="Selhání ON/OFF tlačítka" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="480" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-11" value="Selhání tlačítka zrychlení" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="480" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-12" value="Selhání tlačítka zpomalení" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="480" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.16666666666666666;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-10" target="ZnTfYOugVIomt-gQt8mF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.8333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-12" target="ZnTfYOugVIomt-gQt8mF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-11" target="ZnTfYOugVIomt-gQt8mF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-18" target="ZnTfYOugVIomt-gQt8mF-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-18" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=or;direction=north;numInputs=4;" vertex="1" parent="1">
+          <mxGeometry x="695" y="330" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-20" value="Selhání přepínače Local/Remote Stavu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="666" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-22" value="Selhání WiFi antény" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="666" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-23" value="Selhání LCD displeje" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="666" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-24" value="Selhání E-STOPu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="439" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-28" value="Selhání ovládacího firmwaru" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="466" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-29" value="Selhání ON/OFF relé" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="466" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-30" value="Selhání relé zrychlení" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="466" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-31" value="Selhání relé zpomalení" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="466" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-32" value="Selhání ovládacího panelu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-33" value="Selhání vývojové desky" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="666" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="525.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-34" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=or;direction=north;numInputs=4;" vertex="1" parent="1">
+          <mxGeometry x="577.5" y="540" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-20" target="ZnTfYOugVIomt-gQt8mF-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500.5" y="646" />
+              <mxPoint x="585.5" y="646" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-22" target="ZnTfYOugVIomt-gQt8mF-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-23" target="ZnTfYOugVIomt-gQt8mF-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660.5" y="656" />
+              <mxPoint x="615.5" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-33" target="ZnTfYOugVIomt-gQt8mF-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735.5" y="646" />
+              <mxPoint x="630.5" y="646" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-28" target="ZnTfYOugVIomt-gQt8mF-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="436" />
+              <mxPoint x="703" y="436" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-29" target="ZnTfYOugVIomt-gQt8mF-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-30" target="ZnTfYOugVIomt-gQt8mF-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-31" target="ZnTfYOugVIomt-gQt8mF-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="436" />
+              <mxPoint x="748" y="436" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-5" target="ZnTfYOugVIomt-gQt8mF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-24" target="ZnTfYOugVIomt-gQt8mF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-6" target="ZnTfYOugVIomt-gQt8mF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-32" target="ZnTfYOugVIomt-gQt8mF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="955" y="206" />
+              <mxPoint x="522" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-49" target="ZnTfYOugVIomt-gQt8mF-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-49" value="&lt;div&gt;&lt;font&gt;Ovládací&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font&gt;panel&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="907.5" y="360" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-52" target="ZnTfYOugVIomt-gQt8mF-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-52" value="&lt;div&gt;E-STOP&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="451.5" y="344" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-55" target="ZnTfYOugVIomt-gQt8mF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-55" value="ON/OFF&lt;div&gt;tlačítko&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="130" y="590" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-57" target="ZnTfYOugVIomt-gQt8mF-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-57" value="tlačítko zrychlení" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="245" y="590" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-58" target="ZnTfYOugVIomt-gQt8mF-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-58" value="tlačítko zpomalení" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="355" y="590" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-62" target="ZnTfYOugVIomt-gQt8mF-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-62" value="&lt;div&gt;Relé&amp;nbsp;&lt;/div&gt;&lt;div&gt;zpomalení&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="895" y="580" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-63" target="ZnTfYOugVIomt-gQt8mF-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-63" value="&lt;div&gt;Relé&amp;nbsp;&lt;/div&gt;&lt;div&gt;zrychlení&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="765" y="570" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-64" target="ZnTfYOugVIomt-gQt8mF-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-64" value="&lt;div&gt;ON/OFF&amp;nbsp;&lt;/div&gt;&lt;div&gt;relé&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="550" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-69" target="ZnTfYOugVIomt-gQt8mF-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-69" value="&lt;div&gt;Local/Remote&lt;/div&gt;&lt;div&gt;přepínač&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="415" y="750" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-70" target="ZnTfYOugVIomt-gQt8mF-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-70" value="&lt;div&gt;WiFi&amp;nbsp;&lt;/div&gt;&lt;div&gt;anténa&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="523.5" y="750" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-71" target="ZnTfYOugVIomt-gQt8mF-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-71" value="&lt;div&gt;LCD&amp;nbsp;&lt;/div&gt;&lt;div&gt;displej&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="628.5" y="750" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZnTfYOugVIomt-gQt8mF-72" target="ZnTfYOugVIomt-gQt8mF-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnTfYOugVIomt-gQt8mF-72" value="&lt;div&gt;vývojová&amp;nbsp;&lt;/div&gt;&lt;div&gt;deska&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="743.5" y="750" width="95" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
